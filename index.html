@@ -13,6 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPTMF59J7L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZPTMF59J7L');
+    </script>
+    <script src="https://kit.fontawesome.com/c65c4ca4a0.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark">
     <main>
@@ -20,6 +29,13 @@
             <div class="container">
                 <h1 class="hero__title">PlayersMarket</h1>
                 <h2 class="hero__subtitle">Collection Building Dreams Start Here</h2>
+                <ul class="socials">
+                    <li class="instagram">
+                        <a href="https://www.instagram.com/sammersplayersmarket?igsh=MXN0OGU0MHBra3p3MA==">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <section class="section--dark">
@@ -48,30 +64,55 @@
             </div>
         </section>
         <section class="section--light">
-            <div class="container flex col">
+            <div class="container flex col__center">
                 <h3 class="section__title">Shop Card Exclusives</h3>
                 <a class="section__button" href="https://www.ebay.com/usr/sammers-42">Shop Exclusive Deals Now</a>
             </div>
         </section>
         <section class="section--dark">
-            <div class="container flex col">
+            <div class="container flex col__center">
                 <h3 class="section__title">Shop Graded and Ungraded Cards</h3>
                 <a class="section__button" href="https://www.ebay.com/usr/sammers-42">Shop Card Deals Now</a>
+            </div>
+        </section>
+        <section class="section--light">
+            <div class="container flex col__center">
+                <h3 class="section__title">Read Our Verified Ebay Reviews</h3>
+                <a href="https://www.ebay.com/fdbk/feedback_profile/sammers-42?user_context=BUYER" class="section__link">
+                    <h4 class="section__subtitle">Top-rated Ebay Seller</h4>
+                </a>
+                <ul class="flex gap col-4">
+                    <li class="flex col review">
+                        <div class="review__quote">"</div>
+                        <p class="review__body">Great quality card, fast shipping and came as described. I would love to do business with seller again. Highly recommended.</p>
+                    </li>
+                    <li class="flex col review">
+                        <div class="review__quote">"</div>
+                        <p class="review__body">Great seller, highly recommended and a great asset to the community. The cards came as described and quick shipping. I hope we can do business again soon!</p>
+                    </li>
+                    <li  class="flex col review">
+                        <div class="review__quote">"</div>
+                        <p class="review__body">Shipped with lots of care and super quick, Wonderful seller!</p>
+                    </li>
+                    <li class="flex col review">
+                        <div class="review__quote">"</div>
+                        <p class="review__body">Amazing seller!!! Best seller I have dealt with on EBay!! Will buy again soon. Thank you!</p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
         <nav class="footer__nav container flex justify_between">
-            <p class="copyright">Copyright © 
+            <p id="copyright" class="copyright">
                 <script>
                     const currentYear = new Date().getFullYear();
-                    document.write(currentYear);
+                    document.getElementById("copyright").innerHTML = `Copyright © ${currentYear} PlayersMarket LLC`;
                 </script>
-                PlayersMarket LLC 
             </p>
             <a class="footer__link" href="./assets/sampledownload.txt">Contact</a>
             <a class="footer__link" href="./assets/sampledownload.txt">Privacy Policy</a>
-            <a class="footer__link" href="./assets/sampledownload.txt">Terms of Serice</a>
+            <a class="footer__link" href="./assets/sampledownload.txt">Terms of Service</a>
             <a class="footer__link" href="./assets/sampledownload.txt">Shipping</a>
             <a class="footer__link copyright" href="https://deoldev.com">Created By Deoldev, LLC</a>
         </nav>
