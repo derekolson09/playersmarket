@@ -90,6 +90,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 15rem;
+    color: var(--text-body)
+}
+
+.social__link,
+.social__link:visited,
+.social__link a:visited,
+.social__link a i:visited {
+    color: var(--text-body)
+}
+
+.social__link a i:hover {
+    color: var(--text-primary);
+    transition: all 0.5s ease-out;
+}
 
 .gap {
     gap: 1em;
@@ -162,6 +181,7 @@ body {
 .section__button:focus,
 .section__button:hover {
     opacity: 0.75;
+    color: var(--text-body)
 }
 
 .review__quote {
@@ -254,6 +274,10 @@ body {
         > li {
             width: 100%
         }
+    }
+    .socials {
+        justify-content: center;
+        margin-right: 0;
     }
 }
 
